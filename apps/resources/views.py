@@ -7,6 +7,8 @@ from .models import Resources
 from apps.user.models import User
 from .utils import generate_cat_count_list
 
+from .form import PostResourceForm
+
 
 # Create your views here.
 
@@ -29,10 +31,25 @@ def home_page(request):
 
 
 def resource_post(request):
-    return render(
-        request,
-        "resources/post.html"
-    )
+
+    if request.method == "GET":
+        form = PostResourceForm()
+        return render(
+            request,
+            "resources/resource_post.html",
+            {'form': form},
+        )
+
+    else:
+        form = PostResourceForm(request.POST)
+        return render(
+            request,
+            "resources/resource_post.html"
+        )
+        if form.is_valid():
+            data = form.cleaned_data
+            breakpoint()
+
 
 
 def home_page_old(request):
