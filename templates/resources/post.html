@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} {{block.super}} - Post {% endblock title %}
+
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/form.css'" />
+{{block.super}}
+{% endblock stylesheet %}
+
+{% block content %}
+<h1>Share Resource</h1>
+<div class="resource-form">
+    <form method="post" action="resource-post"
+</div>
+
+{% endblock content %}
+
