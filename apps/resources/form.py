@@ -18,11 +18,11 @@ class PostResourceForm(forms.Form):
         ]
     )
 
-    tags = forms.ChoiceField(
-        widget=forms.SelectMultiple,
-        choices=[
-            ('Beginner', 'Beginner'),
-            ('Senior', 'Senior'),
-            ('Middle', 'Middle'),
-        ]
-    )
+    # tags = forms.ChoiceField(
+    #     widget=forms.SelectMultiple,
+    #     choices=[
+    #         ('Beginner', 'Beginner'),
+    #         ('Senior', 'Senior'),
+    #         ('Middle', 'Middle'),
+    #     ]
+    # )

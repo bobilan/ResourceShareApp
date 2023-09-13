@@ -1,0 +1,45 @@
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/resource/post/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/resource/post/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/resource/post/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/resource/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.034901 >> GET | 127.0.0.1:8000/
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.013220 >> GET | 127.0.0.1:8000/
+[info] GET | 127.0.0.1:8000/resource/post/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.029659 >> GET | 127.0.0.1:8000/resource/post/
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.076784 >> GET | 127.0.0.1:8000/
+[info]  EXECUTION TIME 0:00:00.077093 >> GET | 127.0.0.1:8000/
+[info] GET | 127.0.0.1:8000/resource/post/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.031496 >> GET | 127.0.0.1:8000/resource/post/
+[info]  EXECUTION TIME 0:00:00.031737 >> GET | 127.0.0.1:8000/resource/post/
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.053358 >> GET | 127.0.0.1:8000/
+[info]  EXECUTION TIME 0:00:00.053680 >> GET | 127.0.0.1:8000/
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.014527 >> GET | 127.0.0.1:8000/
+[info]  EXECUTION TIME 0:00:00.014812 >> GET | 127.0.0.1:8000/
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.012946 >> GET | 127.0.0.1:8000/
+[info]  EXECUTION TIME 0:00:00.013210 >> GET | 127.0.0.1:8000/
+[info] GET | 127.0.0.1:8000/resource/post/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.018221 >> GET | 127.0.0.1:8000/resource/post/
+[info]  EXECUTION TIME 0:00:00.018452 >> GET | 127.0.0.1:8000/resource/post/
+[info] GET | 127.0.0.1:8000/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.048756 >> GET | 127.0.0.1:8000/
+[info]  EXECUTION TIME 2  0:00:00.049141 >> GET | 127.0.0.1:8000/
+[info] GET | 127.0.0.1:8000/resource/post/ | text/plain | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+[info]  EXECUTION TIME 0:00:00.023557 >> GET | 127.0.0.1:8000/resource/post/
+[info]  EXECUTION TIME 2  0:00:00.023789 >> GET | 127.0.0.1:8000/resource/post/
