@@ -18,6 +18,7 @@ env/
 
 # Logs
 *.log
+req_res_logs.txt
 
 # Temporary files
 *.tmp
@@ -38,3 +39,4 @@ node_modules/
 *.sqlite3
 *.sqlite
 *.pdb
+
