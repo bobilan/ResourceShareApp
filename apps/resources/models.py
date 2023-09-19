@@ -16,6 +16,7 @@ class Tag(CreatedModifiedDateTimeBase):
 
 
 class Category(CreatedModifiedDateTimeBase):
+    objects = None
     cat = models.CharField(max_length=100)
 
     class Meta:
