@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %} {{ block.super }} - Home {% endblock title %}
+{% block content %}
+
+<h1>Welcome {{request.user.username}} </h1>
+
+<div>
+    <h2>
+        Viewed resources
+    </h2>
+
+    {% for resource_id, resource_title in session.viewed_resources %}
+    <a href= {% url 'resource_detail' id=resource_id %}> {{ resource.title }} </a>
+
+    {% empty %}
+    <p>
+        No recently viewed resources
+    </p>
+
+    {% endfor %}
+</div>
+
+
+{% endblock content%}
+
+
+<!--<!DOCTYPE html>-->
+
+<!--<html>-->
+<!--  <body>-->
+
+<!--    <h1>Welcome to ResourceShare</h1>-->
+
+<!--    <h3>All Users</h3>-->
+<!--    <p>{{user_cnt}} and counting!</p>-->
+
+<!--    <p>{{cnt}} resources and counting!</p>-->
+
+<!--    <h3>Resources per category</h3>-->
+<!--    <ol>-->
+<!--      {% for res_cat in res_per_cat %}-->
+<!--      <li>{{res_cat.cat_id__cat}}: {{res_cat.cnt}}</li>-->
+<!--      {% endfor %}-->
+<!--    </ol>-->
+<!--  </body>-->
+<!--</html>-->

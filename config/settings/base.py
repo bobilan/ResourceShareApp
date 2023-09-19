@@ -32,9 +32,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "apps.core.middleware.logging.simple_logging_middleware",
-    "apps.core.middleware.logging.ViewExecutionTimeMiddleware",
-    "apps.core.middleware.logging.ViewExecutionTime2Middleware",
+    "apps.core.middleware.log.simple_logging_middleware",
+    # "apps.core.middleware.logging.ViewExecutionTimeMiddleware",
+    # "apps.core.middleware.logging.ViewExecutionTime2Middleware",
 
 ]
 
@@ -88,4 +88,42 @@ STATICFILES_DIRS = [str(BASE_DIR / "static")]
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = 'user.User'
+
+# SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+
+LOGIN_URL = "login-view"
+
+LOGGING = {
+    "version": 1,
+    "loggers": {"logging_mw": {
+        "handlers": ['file', 'console'],
+        "level": "DEBUG",
+        }
+    },
+    "handlers": {
+        "console": {
+            "level": "DEBUG",
+            "class": "logging.StreamHandler",
+            "filters": ["only_if_debug_true"]
+        },
+        "file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": str(BASE_DIR / 'logs' / 'req_res_logs.txt'),
+            "formatter": "verbose",
+        }
+    },
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {module} :: {message}",
+            "style": "{",
+        }
+    },
+    "filters": {
+        "only_if_debug_true": {
+            "()": "django.utils.log.RequireDebugTrue"
+        }
+    },
+}
+
 

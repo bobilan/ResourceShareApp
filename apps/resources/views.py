@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 from django.views.generic import TemplateView
 from django.db.models import Count
 
@@ -30,6 +31,7 @@ def home_page(request):
     )
 
 
+@login_required
 def resource_post(request):
 
     if request.method == "GET":
@@ -49,7 +51,6 @@ def resource_post(request):
         if form.is_valid():
             data = form.cleaned_data
             breakpoint()
-
 
 
 def home_page_old(request):
@@ -75,13 +76,27 @@ def home_page_old(request):
 
     return HttpResponse(response)
 
-
+@login_required
 def resource_detail(request, id):
+    max_viewed_resources = 5
+    viewed_resources = request.session.get('viewed_resources', [])
+
     res = (
         Resources.objects.select_related("user_id", "cat_id")
         .prefetch_related("tags")
         .get(pk=id)
     )
+
+    viewed_resource = [id, res.title]
+
+    if viewed_resource in viewed_resources:
+        viewed_resources.remove(viewed_resource)
+
+    viewed_resources.insert(0, viewed_resource)
+
+    viewed_resources = viewed_resources[:max_viewed_resources]
+
+    request.session["viewed_resources"] = viewed_resources
 
     response = f"""
       <html>

@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% load static %}
+<!---->
+{% block title %}{{ block.super}} - Post {% endblock title %}
+<!---->
+{% block stylesheet %} {{ block.super}}
+<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}" />
+{% endblock stylesheet %}
+<!---->
+{% block content %}
+<div class="resource-form">
+  <h1 align=center> Log in</h1>
+
+    <div class="login-error"> </div>
+  <form method="post">
+    {% csrf_token %} {{ form }}
+    <div class="form-element">
+
+    <input type="submit" value="Submit" />
+  </form>
+    </div>
+</div>
+
+{% endblock content %}
