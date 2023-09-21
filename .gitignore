@@ -18,7 +18,8 @@ env/
 
 # Logs
 *.log
-req_res_logs.txt
+
+logs/*.txt
 
 # Temporary files
 *.tmp

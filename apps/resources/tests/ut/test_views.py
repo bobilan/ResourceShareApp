@@ -193,7 +193,6 @@ class TestUsersListView(TestCase):
             HTTP_USER_AGENT="Mozilla/5.0 (Macintosh; Intel Mac OS X 10)",
             HTTP_CONTENT_TYPE="",
         )
-        breakpoint()
 
         users = response.context["users"]
         self.assertEqual(len(users), 2)
