@@ -5,7 +5,7 @@ base-install:
 	pip install -r requirements/base.txt
 
 dev-install:
-	pip install base-r requirements/dev.txt
+	pip install base -r requirements/dev.txt
 
 dev-migrate:
 	python manage.py migrate --settings=config.settings.dev
