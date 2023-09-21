@@ -53,7 +53,8 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
     - name: Clean up old PostgreSQL containers
-      run: docker-compose down --remove-orphans
+      working-directory: .github/workflows/
+      run: docker-compose -f ci_dev.yml down --remove-orphans
 
     - name: Test with Django test
       run: |
