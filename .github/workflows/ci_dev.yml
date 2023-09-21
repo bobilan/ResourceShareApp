@@ -28,8 +28,8 @@ jobs:
       postgres_main:
         image: postgres:15
         env:
-          POSTGRES_USER: ${{ env.DB_USER }}
-          POSTGRES_DB: ${{ env.DB_NAME }}
+          POSTGRES_USER: ${{ secrets.DB_USER }}
+          POSTGRES_DB: ${{ secrets.DB_NAME }}
         ports:
           - 5432:5432
 
